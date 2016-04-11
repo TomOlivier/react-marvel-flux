@@ -28,7 +28,6 @@ const propTypes = {
 const HeroListItem = (props) => {
 
   const { hero } = props;
-
   /**
   * Render a tag link (e.g. link to its wiki page) under the Hero
   */
