@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, IndexRoute} from 'react-router';
+import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 
 import App from './components/App';
 import HeroList from './components/hero/HeroList';
@@ -15,6 +15,6 @@ const routes = (
 
 // Start of the app
 ReactDOM.render(
-  <Router routes={routes} />,
+  <Router routes={routes} history={hashHistory} />,
   document.getElementById('app')
 );
