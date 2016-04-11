@@ -4,10 +4,10 @@
 
 This project relies on:
 
-- React 0.14.7
-- Flux
-- React-router
-- Webpack
+- React 15.0.1
+- Flux 2.1.1
+- React-router 2.0.1
+- Webpack 1.*
 
 
 ### Install and Run the project

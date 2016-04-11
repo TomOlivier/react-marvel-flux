@@ -13,13 +13,13 @@
     "bootstrap": "^3.3.6",
     "fbjs": "^0.4.0",
     "flux": "2.1.1",
-    "history": "^1.17.0",
+    "history": "^2.0.1",
     "lodash": "4.5.*",
-    "react": "0.14.7",
-    "react-addons-update": "^0.14.7",
-    "react-dom": "0.14.7",
-    "react-router": "1.0.3",
-    "superagent": "^1.4.0"
+    "react": "15.0.1",
+    "react-addons-update": "15.0.1",
+    "react-dom": "15.0.1",
+    "react-router": "2.0.1",
+    "superagent": "1.8.3"
   },
   "devDependencies": {
     "babel-core": "^6.5.2",
