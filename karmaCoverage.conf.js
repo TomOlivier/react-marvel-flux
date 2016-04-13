@@ -14,7 +14,7 @@ module.exports = function(config) {
 
     preprocessors: {
         // 'src/**/*.js' : [ 'coverage' ],
-        'tests.webpack.js': [ 'webpack', 'sourcemap' ] //preprocess with webpack and our sourcemap loader
+        'tests.webpack.js': [ 'webpack' ] //preprocess with webpack and our sourcemap loader
     },
 
     reporters: ['mocha', 'coverage'],
@@ -40,14 +40,9 @@ module.exports = function(config) {
     },
 
     coverageReporter: {
-        instrumenters: {
-          "babel-istanbul": require("babel-istanbul")
-        },
-        instrumenter: {
-          "src/**/*.js": "babel-istanbul"
-        },
         reporters: [
-          {type: "html", dir: "coverage"},
+          // {type: "html", dir: "coverage"},
+          {type: "text"},
         ]
     },
 

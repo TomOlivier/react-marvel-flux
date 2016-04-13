@@ -1,7 +1,7 @@
 import React from 'react'
 import { expect } from 'chai'
 import { shallow } from 'enzyme'
-import HeroList from './HeroList'
+import HeroList from '../../../src/components/hero/HeroList'
 
 const heroesEx = [{
   "id": 1011334,
@@ -206,6 +206,7 @@ describe('<HeroList/> component', () => {
   it('Should be mounted and loading', () => {
     expect(wrapper.state().loading).to.equal(true)
     expect(wrapper.find('div').text()).to.equal("Loading ...")
+    expect(wrapper.find('h2').length).to.equal(0)
   })
 
   it("Should display a h2 text when it has loaded", () => {

@@ -10,6 +10,7 @@ var PATHS = {
   src: path.resolve(__dirname, 'src'),
   dist: path.resolve(__dirname, 'dist'),
   build: path.resolve(__dirname, 'dist', 'build'),
+  test: path.resolve(__dirname, 'test'),
 };
 
 var config = {
@@ -38,7 +39,8 @@ var config = {
       test: /\.jsx?$/,
       loader: 'babel-loader',
       include: [
-        PATHS.src
+        PATHS.src,
+        PATHS.test
       ]
     },
     {
